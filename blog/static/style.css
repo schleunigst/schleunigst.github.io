@@ -20,7 +20,6 @@
   --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
   --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   --col: 720px;
-  --wide: 1040px;
 }
 
 *,
@@ -386,18 +385,19 @@ button:focus-visible {
   font-size: 13px;
   line-height: 1.6;
   color: #717a80;
-  max-width: 810px;
+  max-width: var(--col);
   margin: 14px 0 0;
   text-align: left;
 }
 .entry figcaption strong { font-weight: 600; color: #54616a; }
 .fig-num { font-weight: 600; color: #435560; margin-right: 7px; }
 
-/* full-bleed-ish natural-width figure */
+/* full-width figure: every piece of art is authored at the column's 720px
+   natural width, so render it there — natural size, edges flush with text */
 .hero-figure {
-  width: min(var(--wide), 92vw);
-  margin-left: calc((var(--col) - min(var(--wide), 92vw)) / 2);
-  margin-right: calc((var(--col) - min(var(--wide), 92vw)) / 2);
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
 }
 .hero-figure img { width: 100%; }
 
@@ -707,8 +707,9 @@ button:focus-visible {
   .footnotes { margin-left: 24px; margin-right: 24px; max-width: var(--col); }
   .entry-list { margin-left: 24px; margin-right: 24px; }
   .hero-figure {
-    width: min(var(--wide), 100%);
-    margin-left: calc((min(100%, var(--col)) - min(var(--wide), 100%)) / 2);
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 

@@ -4,7 +4,7 @@ dek: A design paper for instant_barcode_scanner — what two benchmark campaigns
 author: Schleunigst
 org: Schleunigst
 status: Design paper, implemented
-date: 2026-10-17
+date: 2026-10-19
 slug: instant-by-design
 sections:
   - The package the measurements asked for | The thesis, in bullets
@@ -114,7 +114,7 @@ The single hardest rule, and the one the audit's first finding is about: **futur
 
 The NFC handoff is the proof of the thesis, because it is the case where the truth was the whole game. The contract: `beginNfcHandoff()` drives the scanner `closed`, waits for the `AvailabilityCallback` to declare the camera actually free (measured ~0.19 s with `camera2`, against 1.29 s of nominal-vanilla soak), applies a settle delay, and suppresses auto-resume; the app runs its reader session; `endNfcHandoff()` re-drives to the previous target. The scanner takes no NFC dependency and knows nothing about cards — it only guarantees release timing. Everything else in this design is an optimization; this is the part that makes the package honest.
 
-*Addendum, from the build.* Two races the paper did not name arrived anyway, and each got its rule the same way: named, then ordered.
+*Addendum, 2026-10-19, from the build.* Two races the paper did not name arrived anyway, and each got its rule the same way: named, then ordered.
 
 1. **Scan during a handoff waits, and times out only the scan window.** A host that navigates to the scan screen and calls `scan()` in the same frame as `endNfcHandoff()` must not race a handoff's close in flight. The scan joins the queue behind the handoff end; its timeout covers the scan window only, never the wait. An already-running scan that a handoff interrupts fails with a distinct `StateError` — the caller is told *why*, not just that it failed.
 2. **A dispose reset cannot kill a warm-up behind it.** Host apps that tear their controller down per screen produce bursts where an old controller's `dispose()` lands in the call order after a newer controller's `warmUp()` has already fetched its texture id. The preview texture is engine-scoped, not controller-scoped: it survives a reset and dies only with the engine, so a burst of screen toggles ends settled on the requested state instead of throwing `configure_failed` at a controller that did nothing wrong. Every plugin-side command — including the activity-stopped close — joins one serialized queue; nothing retargets an in-flight drive out from under its caller.
