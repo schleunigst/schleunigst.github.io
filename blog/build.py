@@ -38,11 +38,13 @@ from pathlib import Path
 # Site constants (edit these to taste; no branding of any other site included)
 # --------------------------------------------------------------------------
 
-SITE_TITLE = "Research notes"
-SITE_TAGLINE = "An informal research blog"
+SITE_TITLE = "Schleunigst"
+SITE_TAGLINE = "Notes on making Android cameras instant"
 SITE_DEK = (
-    "An informal research blog about interpretability, training runs, and "
-    "whatever else is on the bench. Newest entries first."
+    "Field notes on making Android cameras instant: teardowns of the "
+    "scan stacks people actually run, every camera state priced in "
+    "milliseconds and milliamps, and the design the measurements imply. "
+    "Newest entries first."
 )
 WORDS_PER_MINUTE = 200
 

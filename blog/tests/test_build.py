@@ -433,7 +433,7 @@ class IntegrationTests(unittest.TestCase):
         self.assertIn("minute read", index)
         self.assertNotIn("Draft post that must not build", index)
         self.assertIn('href="./static/style.css"', index)
-        self.assertIn("An informal research blog", index)
+        self.assertIn("Notes on making Android cameras instant", index)
 
     def test_index_newest_first(self):
         content = self.tmp / "content"
