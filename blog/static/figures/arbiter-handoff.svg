@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 176" role="img" aria-labelledby="f4t f4d" width="720" height="176">
+<title id="f4t">Camera release and RFID start after leaving the scan tab</title>
+<desc id="f4d">The mobile_scanner apps release the camera 1.29 seconds after the tap and start RFID at 1.48 seconds; the plugin apps release at 0.19 seconds and start RFID at 0.38 seconds.</desc>
+<line x1="132.0" y1="58" x2="680.0" y2="58" stroke="#dce1e4" stroke-width="1"/>
+<text x="8.0" y="62.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="11" fill="#222629" text-anchor="start" font-weight="400" >A1 / A2 mobile_scanner</text>
+<circle cx="133.7" cy="58" r="3" fill="none" stroke="#677179" stroke-width="1" stroke-dasharray="2 2"/>
+<circle cx="572.8" cy="58" r="5.5" fill="#ac6538"/>
+<circle cx="637.9" cy="58" r="5.5" fill="#28627b"/>
+<line x1="132.0" y1="124" x2="680.0" y2="124" stroke="#dce1e4" stroke-width="1"/>
+<text x="8.0" y="128.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="11" fill="#222629" text-anchor="start" font-weight="400" >P1–P4 plugin</text>
+<circle cx="133.7" cy="124" r="3" fill="none" stroke="#677179" stroke-width="1" stroke-dasharray="2 2"/>
+<circle cx="196.4" cy="124" r="5.5" fill="#ac6538"/>
+<circle cx="263.5" cy="124" r="5.5" fill="#28627b"/>
+<text x="141.7" y="46.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="10" fill="#677179" text-anchor="start" font-weight="400" >stop() ack ≈ 5 ms</text>
+<text x="572.8" y="46.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="11" fill="#ac6538" text-anchor="middle" font-weight="400" >camera really free 1.29 s</text>
+<text x="637.9" y="78.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="11" fill="#28627b" text-anchor="middle" font-weight="400" >RFID ok 1.48 s</text>
+<text x="206.4" y="112.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="11" fill="#ac6538" text-anchor="start" font-weight="400" >free 0.19 s</text>
+<text x="273.5" y="112.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="11" fill="#28627b" text-anchor="start" font-weight="400" >RFID ok 0.38 s</text>
+<line x1="196.4" y1="91" x2="572.8" y2="91" stroke="#ac6538" stroke-width="1.5"/>
+<path d="M 196.4 91 l 7 -4 v 8 z" fill="#ac6538"/>
+<path d="M 572.8 91 l -7 -4 v 8 z" fill="#ac6538"/>
+<text x="384.6" y="86.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="11" fill="#ac6538" text-anchor="middle" font-weight="400" >≈ 1.1 s of dead time, every card tap</text>
+<line x1="132.0" y1="146" x2="132.0" y2="151" stroke="#677179" stroke-width="1"/>
+<text x="132.0" y="164.0" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#677179" text-anchor="middle" font-weight="400" >0.0</text>
+<line x1="303.2" y1="146" x2="303.2" y2="151" stroke="#677179" stroke-width="1"/>
+<text x="303.2" y="164.0" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#677179" text-anchor="middle" font-weight="400" >0.5</text>
+<line x1="474.5" y1="146" x2="474.5" y2="151" stroke="#677179" stroke-width="1"/>
+<text x="474.5" y="164.0" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#677179" text-anchor="middle" font-weight="400" >1.0</text>
+<line x1="645.8" y1="146" x2="645.8" y2="151" stroke="#677179" stroke-width="1"/>
+<text x="645.8" y="164.0" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#677179" text-anchor="middle" font-weight="400" >1.5</text>
+<text x="686.0" y="164.0" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#677179" text-anchor="start" font-weight="400" >s</text>
+</svg>

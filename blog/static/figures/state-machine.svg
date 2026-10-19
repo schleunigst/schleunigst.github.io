@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 220" role="img" aria-labelledby="smt smd" width="720" height="220">
+<title id="smt">Camera lifecycle states of a session-scoped scanner, with measured transition costs</title>
+<desc id="smd">Four stable states: closed at minus 165 milliamps with the indicator off; open at minus 197 milliamps; parked, a held session with repeating stopped, at minus 372 milliamps with a frozen last frame; and live at minus 599 milliamps with the indicator lit. Forward transitions: open the device in about 300 milliseconds, configure the session in 0.4 to 0.8 seconds, start repeating in 266 milliseconds. Reverse: stopRepeating plus abortCaptures returns to parked in about zero milliseconds and the indicator goes dark. An idle policy closes the parked state after a timeout, making the next open about 1.3 seconds.</desc>
+<defs>
+<marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+<path d="M 0 0 L 10 5 L 0 10 z" fill="#28627b"/>
+</marker>
+<marker id="arrMuted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+<path d="M 0 0 L 10 5 L 0 10 z" fill="#677179"/>
+</marker>
+</defs>
+<text x="173" y="60" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#28627b" text-anchor="middle">open device · +300 ms</text>
+<text x="359" y="60" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#28627b" text-anchor="middle">configure session · +0.4–0.8 s</text>
+<text x="545" y="60" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#28627b" text-anchor="middle">startRepeating · 266 ms</text>
+<line x1="143" y1="98" x2="203" y2="98" stroke="#28627b" stroke-width="1.5" marker-end="url(#arr)"/>
+<line x1="329" y1="98" x2="389" y2="98" stroke="#28627b" stroke-width="1.5" marker-end="url(#arr)"/>
+<line x1="515" y1="98" x2="575" y2="98" stroke="#28627b" stroke-width="1.5" marker-end="url(#arr)"/>
+<rect x="20" y="70" width="120" height="56" rx="8" fill="#f4f6f7" stroke="#677179" stroke-width="1.2"/>
+<text x="80" y="94" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#222629" text-anchor="middle" font-weight="600">closed</text>
+<text x="80" y="111" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#677179" text-anchor="middle">−165 mA · dot off</text>
+<rect x="206" y="70" width="120" height="56" rx="8" fill="#ffffff" stroke="#28627b" stroke-width="1.2"/>
+<text x="266" y="94" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#222629" text-anchor="middle" font-weight="600">open</text>
+<text x="266" y="111" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#677179" text-anchor="middle">−197 mA · dot off</text>
+<rect x="392" y="70" width="120" height="56" rx="8" fill="#eef4f7" stroke="#28627b" stroke-width="1.2"/>
+<text x="452" y="94" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#222629" text-anchor="middle" font-weight="600">parked</text>
+<text x="452" y="111" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#677179" text-anchor="middle">−372 mA · dot off</text>
+<rect x="578" y="70" width="120" height="56" rx="8" fill="#e7f0f4" stroke="#28627b" stroke-width="1.2"/>
+<circle cx="606" cy="90" r="3.5" fill="#3da35d"/>
+<text x="642" y="94" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="13" fill="#222629" text-anchor="middle" font-weight="600">live</text>
+<text x="638" y="111" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#677179" text-anchor="middle">−599 mA · dot on</text>
+<text x="545" y="148" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#677179" text-anchor="middle">stopRepeating → ~0 ms · dot dark</text>
+<path d="M 452 126 L 452 168 Q 452 180 440 180 L 92 180 Q 80 180 80 168 L 80 128" fill="none" stroke="#677179" stroke-width="1.2" marker-end="url(#arrMuted)"/>
+<text x="266" y="200" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#677179" text-anchor="middle">policy: idle &gt; T → close · next open ~1.3 s</text>
+</svg>

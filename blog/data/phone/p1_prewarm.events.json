@@ -1,0 +1,782 @@
+[
+ {
+  "wall_ms": 1792162380469,
+  "elapsed_us": 672057031762,
+  "event": "probe_registered",
+  "extra": ""
+ },
+ {
+  "wall_ms": 1792162380469,
+  "elapsed_us": 672057031839,
+  "event": "camera_released",
+  "extra": "0"
+ },
+ {
+  "wall_ms": 1792162380470,
+  "elapsed_us": 672057031898,
+  "event": "camera_released",
+  "extra": "1"
+ },
+ {
+  "wall_ms": 1792162380470,
+  "elapsed_us": 672057031910,
+  "event": "camera_released",
+  "extra": "2"
+ },
+ {
+  "wall_ms": 1792162380470,
+  "elapsed_us": 672057031917,
+  "event": "camera_released",
+  "extra": "3"
+ },
+ {
+  "wall_ms": 1792162380527,
+  "elapsed_us": 672057089004,
+  "event": "app_mounted",
+  "extra": ""
+ },
+ {
+  "wall_ms": 1792162380527,
+  "elapsed_us": 672057089106,
+  "event": "warmup_requested",
+  "extra": ""
+ },
+ {
+  "wall_ms": 1792162380551,
+  "elapsed_us": 672057113292,
+  "event": "native_warmup_begin",
+  "extra": "0"
+ },
+ {
+  "wall_ms": 1792162380636,
+  "elapsed_us": 672057198033,
+  "event": "native_warmup_done",
+  "extra": "0"
+ },
+ {
+  "wall_ms": 1792162380636,
+  "elapsed_us": 672057198406,
+  "event": "fast_ready",
+  "extra": "0"
+ },
+ {
+  "wall_ms": 1792162380671,
+  "elapsed_us": 672057233065,
+  "event": "camera_open",
+  "extra": "0"
+ },
+ {
+  "wall_ms": 1792162381233,
+  "elapsed_us": 672057795381,
+  "event": "first_frame",
+  "extra": ""
+ },
+ {
+  "wall_ms": 1792162387030,
+  "elapsed_us": 672063592383,
+  "event": "tab_tap",
+  "extra": "0"
+ },
+ {
+  "wall_ms": 1792162388121,
+  "elapsed_us": 672064683223,
+  "event": "tab_tap",
+  "extra": "1"
+ },
+ {
+  "wall_ms": 1792162388121,
+  "elapsed_us": 672064683427,
+  "event": "warmup_requested",
+  "extra": ""
+ },
+ {
+  "wall_ms": 1792162388121,
+  "elapsed_us": 672064683603,
+  "event": "warmup_already_bound",
+  "extra": "0"
+ },
+ {
+  "wall_ms": 1792162388121,
+  "elapsed_us": 672064683818,
+  "event": "fast_ready",
+  "extra": "0"
+ },
+ {
+  "wall_ms": 1792162388138,
+  "elapsed_us": 672064700658,
+  "event": "scan_page_mounted",
+  "extra": "0"
+ },
+ {
+  "wall_ms": 1792162388139,
+  "elapsed_us": 672064701377,
+  "event": "preview_painted",
+  "extra": ""
+ },
+ {
+  "wall_ms": 1792162394227,
+  "elapsed_us": 672070789458,
+  "event": "tab_tap",
+  "extra": "2"
+ },
+ {
+  "wall_ms": 1792162394228,
+  "elapsed_us": 672070789915,
+  "event": "stop_for_nfc_requested",
+  "extra": ""
+ },
+ {
+  "wall_ms": 1792162394228,
+  "elapsed_us": 672070790188,
+  "event": "native_stop_begin",
+  "extra": "dart_request"
+ },
+ {
+  "wall_ms": 1792162394229,
+  "elapsed_us": 672070791575,
+  "event": "native_stop_done",
+  "extra": "dart_request"
+ },
+ {
+  "wall_ms": 1792162394230,
+  "elapsed_us": 672070792160,
+  "event": "stop_for_nfc_acked",
+  "extra": ""
+ },
+ {
+  "wall_ms": 1792162394238,
+  "elapsed_us": 672070800029,
+  "event": "rfid_page_mounted",
+  "extra": ""
+ },
+ {
+  "wall_ms": 1792162394239,
+  "elapsed_us": 672070800859,
+  "event": "arbiter_rfid_requested",
+  "extra": ""
+ },
+ {
+  "wall_ms": 1792162394399,
+  "elapsed_us": 672070961762,
+  "event": "camera_released",
+  "extra": "0"
+ },
+ {
+  "wall_ms": 1792162394404,
+  "elapsed_us": 672070966844,
+  "event": "arbiter_camera_clear",
+  "extra": "166ms"
+ },
+ {
+  "wall_ms": 1792162394581,
+  "elapsed_us": 672071143221,
+  "event": "rfid_start_result",
+  "extra": "kotlin.Unit after 166ms"
+ },
+ {
+  "wall_ms": 1792162396844,
+  "elapsed_us": 672073406482,
+  "event": "tab_tap",
+  "extra": "0"
+ },
+ {
+  "wall_ms": 1792162398160,
+  "elapsed_us": 672074722103,
+  "event": "tab_tap",
+  "extra": "1"
+ },
+ {
+  "wall_ms": 1792162398160,
+  "elapsed_us": 672074722630,
+  "event": "warmup_requested",
+  "extra": ""
+ },
+ {
+  "wall_ms": 1792162398161,
+  "elapsed_us": 672074722915,
+  "event": "native_warmup_begin",
+  "extra": "0"
+ },
+ {
+  "wall_ms": 1792162398167,
+  "elapsed_us": 672074729154,
+  "event": "native_warmup_done",
+  "extra": "0"
+ },
+ {
+  "wall_ms": 1792162398167,
+  "elapsed_us": 672074729836,
+  "event": "fast_ready",
+  "extra": "0"
+ },
+ {
+  "wall_ms": 1792162398178,
+  "elapsed_us": 672074739953,
+  "event": "scan_page_mounted",
+  "extra": "0"
+ },
+ {
+  "wall_ms": 1792162398178,
+  "elapsed_us": 672074740462,
+  "event": "preview_painted",
+  "extra": ""
+ },
+ {
+  "wall_ms": 1792162398197,
+  "elapsed_us": 672074759754,
+  "event": "camera_open",
+  "extra": "0"
+ },
+ {
+  "wall_ms": 1792162398840,
+  "elapsed_us": 672075402365,
+  "event": "first_frame",
+  "extra": ""
+ },
+ {
+  "wall_ms": 1792162402274,
+  "elapsed_us": 672078836093,
+  "event": "tab_tap",
+  "extra": "2"
+ },
+ {
+  "wall_ms": 1792162402274,
+  "elapsed_us": 672078836477,
+  "event": "stop_for_nfc_requested",
+  "extra": ""
+ },
+ {
+  "wall_ms": 1792162402274,
+  "elapsed_us": 672078836765,
+  "event": "native_stop_begin",
+  "extra": "dart_request"
+ },
+ {
+  "wall_ms": 1792162402276,
+  "elapsed_us": 672078838085,
+  "event": "native_stop_done",
+  "extra": "dart_request"
+ },
+ {
+  "wall_ms": 1792162402276,
+  "elapsed_us": 672078838753,
+  "event": "stop_for_nfc_acked",
+  "extra": ""
+ },
+ {
+  "wall_ms": 1792162402286,
+  "elapsed_us": 672078848126,
+  "event": "rfid_page_mounted",
+  "extra": ""
+ },
+ {
+  "wall_ms": 1792162402286,
+  "elapsed_us": 672078848704,
+  "event": "arbiter_rfid_requested",
+  "extra": ""
+ },
+ {
+  "wall_ms": 1792162402469,
+  "elapsed_us": 672079031435,
+  "event": "camera_released",
+  "extra": "0"
+ },
+ {
+  "wall_ms": 1792162402472,
+  "elapsed_us": 672079033952,
+  "event": "arbiter_camera_clear",
+  "extra": "185ms"
+ },
+ {
+  "wall_ms": 1792162402665,
+  "elapsed_us": 672079227233,
+  "event": "rfid_start_result",
+  "extra": "kotlin.Unit after 185ms"
+ },
+ {
+  "wall_ms": 1792162404886,
+  "elapsed_us": 672081448853,
+  "event": "tab_tap",
+  "extra": "0"
+ },
+ {
+  "wall_ms": 1792162406206,
+  "elapsed_us": 672082768633,
+  "event": "tab_tap",
+  "extra": "1"
+ },
+ {
+  "wall_ms": 1792162406209,
+  "elapsed_us": 672082770906,
+  "event": "warmup_requested",
+  "extra": ""
+ },
+ {
+  "wall_ms": 1792162406209,
+  "elapsed_us": 672082771261,
+  "event": "native_warmup_begin",
+  "extra": "0"
+ },
+ {
+  "wall_ms": 1792162406209,
+  "elapsed_us": 672082771542,
+  "event": "scan_page_mounted",
+  "extra": "0"
+ },
+ {
+  "wall_ms": 1792162406209,
+  "elapsed_us": 672082771754,
+  "event": "preview_painted",
+  "extra": ""
+ },
+ {
+  "wall_ms": 1792162406217,
+  "elapsed_us": 672082779250,
+  "event": "native_warmup_done",
+  "extra": "0"
+ },
+ {
+  "wall_ms": 1792162406218,
+  "elapsed_us": 672082780129,
+  "event": "fast_ready",
+  "extra": "0"
+ },
+ {
+  "wall_ms": 1792162406246,
+  "elapsed_us": 672082808139,
+  "event": "camera_open",
+  "extra": "0"
+ },
+ {
+  "wall_ms": 1792162406944,
+  "elapsed_us": 672083506146,
+  "event": "first_frame",
+  "extra": ""
+ },
+ {
+  "wall_ms": 1792162410309,
+  "elapsed_us": 672086871667,
+  "event": "tab_tap",
+  "extra": "2"
+ },
+ {
+  "wall_ms": 1792162410310,
+  "elapsed_us": 672086871922,
+  "event": "stop_for_nfc_requested",
+  "extra": ""
+ },
+ {
+  "wall_ms": 1792162410310,
+  "elapsed_us": 672086872077,
+  "event": "native_stop_begin",
+  "extra": "dart_request"
+ },
+ {
+  "wall_ms": 1792162410311,
+  "elapsed_us": 672086873041,
+  "event": "native_stop_done",
+  "extra": "dart_request"
+ },
+ {
+  "wall_ms": 1792162410311,
+  "elapsed_us": 672086873393,
+  "event": "stop_for_nfc_acked",
+  "extra": ""
+ },
+ {
+  "wall_ms": 1792162410327,
+  "elapsed_us": 672086889742,
+  "event": "rfid_page_mounted",
+  "extra": ""
+ },
+ {
+  "wall_ms": 1792162410328,
+  "elapsed_us": 672086890578,
+  "event": "arbiter_rfid_requested",
+  "extra": ""
+ },
+ {
+  "wall_ms": 1792162410504,
+  "elapsed_us": 672087066751,
+  "event": "camera_released",
+  "extra": "0"
+ },
+ {
+  "wall_ms": 1792162410508,
+  "elapsed_us": 672087070522,
+  "event": "arbiter_camera_clear",
+  "extra": "180ms"
+ },
+ {
+  "wall_ms": 1792162410702,
+  "elapsed_us": 672087264317,
+  "event": "rfid_start_result",
+  "extra": "kotlin.Unit after 180ms"
+ },
+ {
+  "wall_ms": 1792162412908,
+  "elapsed_us": 672089470730,
+  "event": "tab_tap",
+  "extra": "0"
+ },
+ {
+  "wall_ms": 1792162414220,
+  "elapsed_us": 672090782641,
+  "event": "tab_tap",
+  "extra": "1"
+ },
+ {
+  "wall_ms": 1792162414221,
+  "elapsed_us": 672090782901,
+  "event": "warmup_requested",
+  "extra": ""
+ },
+ {
+  "wall_ms": 1792162414221,
+  "elapsed_us": 672090783038,
+  "event": "native_warmup_begin",
+  "extra": "0"
+ },
+ {
+  "wall_ms": 1792162414227,
+  "elapsed_us": 672090789030,
+  "event": "native_warmup_done",
+  "extra": "0"
+ },
+ {
+  "wall_ms": 1792162414230,
+  "elapsed_us": 672090792225,
+  "event": "fast_ready",
+  "extra": "0"
+ },
+ {
+  "wall_ms": 1792162414230,
+  "elapsed_us": 672090792421,
+  "event": "scan_page_mounted",
+  "extra": "0"
+ },
+ {
+  "wall_ms": 1792162414230,
+  "elapsed_us": 672090792581,
+  "event": "preview_painted",
+  "extra": ""
+ },
+ {
+  "wall_ms": 1792162414252,
+  "elapsed_us": 672090814241,
+  "event": "camera_open",
+  "extra": "0"
+ },
+ {
+  "wall_ms": 1792162414905,
+  "elapsed_us": 672091467850,
+  "event": "first_frame",
+  "extra": ""
+ },
+ {
+  "wall_ms": 1792162418346,
+  "elapsed_us": 672094908159,
+  "event": "tab_tap",
+  "extra": "2"
+ },
+ {
+  "wall_ms": 1792162418346,
+  "elapsed_us": 672094908402,
+  "event": "stop_for_nfc_requested",
+  "extra": ""
+ },
+ {
+  "wall_ms": 1792162418346,
+  "elapsed_us": 672094908548,
+  "event": "native_stop_begin",
+  "extra": "dart_request"
+ },
+ {
+  "wall_ms": 1792162418347,
+  "elapsed_us": 672094909499,
+  "event": "native_stop_done",
+  "extra": "dart_request"
+ },
+ {
+  "wall_ms": 1792162418348,
+  "elapsed_us": 672094910012,
+  "event": "stop_for_nfc_acked",
+  "extra": ""
+ },
+ {
+  "wall_ms": 1792162418361,
+  "elapsed_us": 672094922913,
+  "event": "rfid_page_mounted",
+  "extra": ""
+ },
+ {
+  "wall_ms": 1792162418361,
+  "elapsed_us": 672094923322,
+  "event": "arbiter_rfid_requested",
+  "extra": ""
+ },
+ {
+  "wall_ms": 1792162418505,
+  "elapsed_us": 672095067523,
+  "event": "camera_released",
+  "extra": "0"
+ },
+ {
+  "wall_ms": 1792162418508,
+  "elapsed_us": 672095069979,
+  "event": "arbiter_camera_clear",
+  "extra": "146ms"
+ },
+ {
+  "wall_ms": 1792162418693,
+  "elapsed_us": 672095255690,
+  "event": "rfid_start_result",
+  "extra": "kotlin.Unit after 146ms"
+ },
+ {
+  "wall_ms": 1792162420977,
+  "elapsed_us": 672097539048,
+  "event": "tab_tap",
+  "extra": "0"
+ },
+ {
+  "wall_ms": 1792162422296,
+  "elapsed_us": 672098858074,
+  "event": "tab_tap",
+  "extra": "1"
+ },
+ {
+  "wall_ms": 1792162422296,
+  "elapsed_us": 672098858565,
+  "event": "warmup_requested",
+  "extra": ""
+ },
+ {
+  "wall_ms": 1792162422299,
+  "elapsed_us": 672098861042,
+  "event": "native_warmup_begin",
+  "extra": "0"
+ },
+ {
+  "wall_ms": 1792162422299,
+  "elapsed_us": 672098861558,
+  "event": "scan_page_mounted",
+  "extra": "0"
+ },
+ {
+  "wall_ms": 1792162422299,
+  "elapsed_us": 672098861842,
+  "event": "preview_painted",
+  "extra": ""
+ },
+ {
+  "wall_ms": 1792162422306,
+  "elapsed_us": 672098868307,
+  "event": "native_warmup_done",
+  "extra": "0"
+ },
+ {
+  "wall_ms": 1792162422307,
+  "elapsed_us": 672098868865,
+  "event": "fast_ready",
+  "extra": "0"
+ },
+ {
+  "wall_ms": 1792162422345,
+  "elapsed_us": 672098907778,
+  "event": "camera_open",
+  "extra": "0"
+ },
+ {
+  "wall_ms": 1792162422976,
+  "elapsed_us": 672099538178,
+  "event": "first_frame",
+  "extra": ""
+ },
+ {
+  "wall_ms": 1792162426382,
+  "elapsed_us": 672102944592,
+  "event": "tab_tap",
+  "extra": "2"
+ },
+ {
+  "wall_ms": 1792162426382,
+  "elapsed_us": 672102944808,
+  "event": "stop_for_nfc_requested",
+  "extra": ""
+ },
+ {
+  "wall_ms": 1792162426383,
+  "elapsed_us": 672102944984,
+  "event": "native_stop_begin",
+  "extra": "dart_request"
+ },
+ {
+  "wall_ms": 1792162426383,
+  "elapsed_us": 672102945472,
+  "event": "native_stop_done",
+  "extra": "dart_request"
+ },
+ {
+  "wall_ms": 1792162426383,
+  "elapsed_us": 672102945781,
+  "event": "stop_for_nfc_acked",
+  "extra": ""
+ },
+ {
+  "wall_ms": 1792162426390,
+  "elapsed_us": 672102951876,
+  "event": "rfid_page_mounted",
+  "extra": ""
+ },
+ {
+  "wall_ms": 1792162426391,
+  "elapsed_us": 672102953788,
+  "event": "arbiter_rfid_requested",
+  "extra": ""
+ },
+ {
+  "wall_ms": 1792162426538,
+  "elapsed_us": 672103100396,
+  "event": "camera_released",
+  "extra": "0"
+ },
+ {
+  "wall_ms": 1792162426539,
+  "elapsed_us": 672103101059,
+  "event": "arbiter_camera_clear",
+  "extra": "148ms"
+ },
+ {
+  "wall_ms": 1792162426739,
+  "elapsed_us": 672103301799,
+  "event": "rfid_start_result",
+  "extra": "kotlin.Unit after 148ms"
+ },
+ {
+  "wall_ms": 1792162428994,
+  "elapsed_us": 672105556794,
+  "event": "tab_tap",
+  "extra": "0"
+ },
+ {
+  "wall_ms": 1792162430317,
+  "elapsed_us": 672106879210,
+  "event": "tab_tap",
+  "extra": "1"
+ },
+ {
+  "wall_ms": 1792162430317,
+  "elapsed_us": 672106879472,
+  "event": "warmup_requested",
+  "extra": ""
+ },
+ {
+  "wall_ms": 1792162430317,
+  "elapsed_us": 672106879681,
+  "event": "native_warmup_begin",
+  "extra": "0"
+ },
+ {
+  "wall_ms": 1792162430318,
+  "elapsed_us": 672106879951,
+  "event": "scan_page_mounted",
+  "extra": "0"
+ },
+ {
+  "wall_ms": 1792162430318,
+  "elapsed_us": 672106880154,
+  "event": "preview_painted",
+  "extra": ""
+ },
+ {
+  "wall_ms": 1792162430323,
+  "elapsed_us": 672106885821,
+  "event": "native_warmup_done",
+  "extra": "0"
+ },
+ {
+  "wall_ms": 1792162430324,
+  "elapsed_us": 672106886432,
+  "event": "fast_ready",
+  "extra": "0"
+ },
+ {
+  "wall_ms": 1792162430348,
+  "elapsed_us": 672106910511,
+  "event": "camera_open",
+  "extra": "0"
+ },
+ {
+  "wall_ms": 1792162431022,
+  "elapsed_us": 672107584829,
+  "event": "first_frame",
+  "extra": ""
+ },
+ {
+  "wall_ms": 1792162434411,
+  "elapsed_us": 672110972929,
+  "event": "tab_tap",
+  "extra": "2"
+ },
+ {
+  "wall_ms": 1792162434411,
+  "elapsed_us": 672110973150,
+  "event": "stop_for_nfc_requested",
+  "extra": ""
+ },
+ {
+  "wall_ms": 1792162434411,
+  "elapsed_us": 672110973320,
+  "event": "native_stop_begin",
+  "extra": "dart_request"
+ },
+ {
+  "wall_ms": 1792162434412,
+  "elapsed_us": 672110974038,
+  "event": "native_stop_done",
+  "extra": "dart_request"
+ },
+ {
+  "wall_ms": 1792162434414,
+  "elapsed_us": 672110976315,
+  "event": "stop_for_nfc_acked",
+  "extra": ""
+ },
+ {
+  "wall_ms": 1792162434414,
+  "elapsed_us": 672110976736,
+  "event": "rfid_page_mounted",
+  "extra": ""
+ },
+ {
+  "wall_ms": 1792162434415,
+  "elapsed_us": 672110976922,
+  "event": "arbiter_rfid_requested",
+  "extra": ""
+ },
+ {
+  "wall_ms": 1792162434622,
+  "elapsed_us": 672111184099,
+  "event": "camera_released",
+  "extra": "0"
+ },
+ {
+  "wall_ms": 1792162434625,
+  "elapsed_us": 672111187657,
+  "event": "arbiter_camera_clear",
+  "extra": "211ms"
+ },
+ {
+  "wall_ms": 1792162434807,
+  "elapsed_us": 672111369284,
+  "event": "rfid_start_result",
+  "extra": "kotlin.Unit after 211ms"
+ },
+ {
+  "wall_ms": 1792162437013,
+  "elapsed_us": 672113575811,
+  "event": "tab_tap",
+  "extra": "0"
+ }
+]

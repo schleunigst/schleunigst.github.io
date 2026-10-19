@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 168" role="img" aria-labelledby="f2t f2d" width="720" height="168">
+<title id="f2t">Where the cold 5.76 second bind went</title>
+<desc id="f2d">The cold mobile_scanner bind takes 5.76 seconds: about 0.43 seconds of camera work and about 5.33 seconds of CameraX and scanner overhead. The direct camera2 path opens and delivers a first frame in 0.43 seconds cold.</desc>
+<text x="8.0" y="63.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="11" fill="#222629" text-anchor="start" font-weight="400" >A1 cold, mobile_scanner</text>
+<rect x="150.0" y="46" width="39.6" height="26" fill="#28627b"/>
+<rect x="189.6" y="46" width="490.4" height="26" fill="#ac6538"/>
+<line x1="169.8" y1="46" x2="162.0" y2="24" stroke="#dce1e4" stroke-width="1"/>
+<text x="164.0" y="20.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="11" fill="#28627b" text-anchor="start" font-weight="400" >camera 0.43 s</text>
+<text x="203.6" y="63.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="11" fill="#ffffff" text-anchor="start" font-weight="600" >CameraX + mobile_scanner ≈ 5.33 s</text>
+<text x="714.0" y="63.0" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="12" fill="#222629" text-anchor="end" font-weight="400" >5.76 s</text>
+<text x="8.0" y="125.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="11" fill="#222629" text-anchor="start" font-weight="400" >P1 prewarm, camera2</text>
+<rect x="150.0" y="108" width="39.6" height="26" fill="#28627b"/>
+<text x="199.6" y="125.0" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="12" fill="#28627b" text-anchor="start" font-weight="400" >0.43 s total</text>
+</svg>

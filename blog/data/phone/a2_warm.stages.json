@@ -1,0 +1,128 @@
+{
+ "stages": [
+  "arbiter_camera_clear",
+  "arbiter_rfid_requested",
+  "arbiter_wait_camera",
+  "camera_open",
+  "camera_released",
+  "controller_created",
+  "rfid_page_mounted",
+  "rfid_start_result",
+  "scan_page_mounted",
+  "start_requested",
+  "started",
+  "stop_requested",
+  "stopped"
+ ],
+ "trials": [
+  {
+   "tab_tap": 0,
+   "controller_created": 14560,
+   "scan_page_mounted": 14965,
+   "start_requested": 15166,
+   "started": 66716,
+   "camera_open": 70403
+  },
+  {
+   "tab_tap": 0,
+   "stop_requested": 280,
+   "stopped": 7295,
+   "rfid_page_mounted": 13590,
+   "arbiter_rfid_requested": 14119,
+   "arbiter_wait_camera": 14179,
+   "camera_released": 1249089,
+   "arbiter_camera_clear": 1250851,
+   "rfid_start_result": 1434466
+  },
+  {
+   "tab_tap": 0,
+   "scan_page_mounted": 1714,
+   "start_requested": 1980,
+   "started": 20417,
+   "camera_open": 39332
+  },
+  {
+   "tab_tap": 0,
+   "stop_requested": 182,
+   "stopped": 4615,
+   "rfid_page_mounted": 13393,
+   "arbiter_rfid_requested": 13857,
+   "arbiter_wait_camera": 13911,
+   "camera_released": 1248998,
+   "arbiter_camera_clear": 1252119,
+   "rfid_start_result": 1438312
+  },
+  {
+   "tab_tap": 0,
+   "scan_page_mounted": 3760,
+   "start_requested": 4147,
+   "started": 15784,
+   "camera_open": 37531
+  },
+  {
+   "tab_tap": 0,
+   "stop_requested": 407,
+   "rfid_page_mounted": 9324,
+   "arbiter_rfid_requested": 9548,
+   "arbiter_wait_camera": 9584,
+   "stopped": 9819,
+   "camera_released": 1267091,
+   "arbiter_camera_clear": 1270850,
+   "rfid_start_result": 1456202
+  },
+  {
+   "tab_tap": 0,
+   "scan_page_mounted": 309,
+   "start_requested": 539,
+   "started": 14559,
+   "camera_open": 32006
+  },
+  {
+   "tab_tap": 0,
+   "stop_requested": 449,
+   "rfid_page_mounted": 6947,
+   "arbiter_rfid_requested": 7410,
+   "arbiter_wait_camera": 7595,
+   "stopped": 8003,
+   "camera_released": 1299730,
+   "arbiter_camera_clear": 1302559,
+   "rfid_start_result": 1490630
+  },
+  {
+   "tab_tap": 0,
+   "scan_page_mounted": 8034,
+   "start_requested": 8446,
+   "started": 21088,
+   "camera_open": 36897
+  },
+  {
+   "tab_tap": 0,
+   "stop_requested": 184,
+   "stopped": 8044,
+   "rfid_page_mounted": 8256,
+   "arbiter_rfid_requested": 8424,
+   "arbiter_wait_camera": 8465,
+   "camera_released": 1175495,
+   "arbiter_camera_clear": 1176266,
+   "rfid_start_result": 1368736
+  },
+  {
+   "tab_tap": 0,
+   "scan_page_mounted": 9407,
+   "start_requested": 10158,
+   "started": 29474,
+   "camera_open": 49042
+  },
+  {
+   "tab_tap": 0,
+   "stop_requested": 304,
+   "stopped": 11145,
+   "rfid_page_mounted": 17253,
+   "arbiter_rfid_requested": 19188,
+   "arbiter_wait_camera": 19259,
+   "camera_released": 1276105,
+   "arbiter_camera_clear": 1276415,
+   "rfid_start_result": 1472930
+  }
+ ]
+}

@@ -1,0 +1,105 @@
+{
+ "stages": [
+  "arbiter_camera_clear",
+  "arbiter_rfid_requested",
+  "arbiter_wait_camera",
+  "camera_open",
+  "camera_released",
+  "rfid_no_hardware",
+  "rfid_page_mounted",
+  "scan_page_dispose_begin",
+  "scan_page_mounted"
+ ],
+ "trials": [
+  {
+   "tab_tap": 0,
+   "scan_page_mounted": 20748,
+   "camera_open": 5839702
+  },
+  {
+   "tab_tap": 0,
+   "rfid_page_mounted": 29849,
+   "arbiter_rfid_requested": 32815,
+   "arbiter_wait_camera": 49121,
+   "scan_page_dispose_begin": 52874,
+   "camera_released": 1337972,
+   "arbiter_camera_clear": 1339219,
+   "rfid_no_hardware": 1339717
+  },
+  {
+   "tab_tap": 0,
+   "scan_page_mounted": 2845,
+   "camera_open": 88484
+  },
+  {
+   "tab_tap": 0,
+   "rfid_page_mounted": 40531,
+   "arbiter_rfid_requested": 41548,
+   "arbiter_wait_camera": 41570,
+   "scan_page_dispose_begin": 41753,
+   "camera_released": 1236329,
+   "arbiter_camera_clear": 1238511,
+   "rfid_no_hardware": 1238803
+  },
+  {
+   "tab_tap": 0,
+   "scan_page_mounted": 9305,
+   "camera_open": 113112
+  },
+  {
+   "tab_tap": 0,
+   "rfid_page_mounted": 41197,
+   "arbiter_rfid_requested": 41779,
+   "arbiter_wait_camera": 41837,
+   "scan_page_dispose_begin": 41929,
+   "camera_released": 1248613,
+   "arbiter_camera_clear": 1252741,
+   "rfid_no_hardware": 1253617
+  },
+  {
+   "tab_tap": 0,
+   "scan_page_mounted": 22443,
+   "camera_open": 178520
+  },
+  {
+   "tab_tap": 0,
+   "rfid_page_mounted": 151397,
+   "arbiter_rfid_requested": 152112,
+   "arbiter_wait_camera": 152542,
+   "scan_page_dispose_begin": 153626,
+   "camera_released": 1358144,
+   "arbiter_camera_clear": 1360280,
+   "rfid_no_hardware": 1360708
+  },
+  {
+   "tab_tap": 0,
+   "scan_page_mounted": 7987,
+   "camera_open": 227541
+  },
+  {
+   "tab_tap": 0,
+   "rfid_page_mounted": 39079,
+   "arbiter_rfid_requested": 42298,
+   "arbiter_wait_camera": 46253,
+   "scan_page_dispose_begin": 46778,
+   "arbiter_camera_clear": 1263161,
+   "camera_released": 1262889,
+   "rfid_no_hardware": 1263691
+  },
+  {
+   "tab_tap": 0,
+   "scan_page_mounted": 7989,
+   "camera_open": 130105
+  },
+  {
+   "tab_tap": 0,
+   "rfid_page_mounted": 13786,
+   "arbiter_rfid_requested": 16981,
+   "arbiter_wait_camera": 17094,
+   "scan_page_dispose_begin": 17168,
+   "camera_released": 1174546,
+   "arbiter_camera_clear": 1177514,
+   "rfid_no_hardware": 1177942
+  }
+ ]
+}

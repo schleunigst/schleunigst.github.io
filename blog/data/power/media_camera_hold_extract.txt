@@ -1,0 +1,19 @@
+== before hold (09:11) ==
+Active Camera Clients:
+(Camera ID: 0, Cost: 51, PID: 16375, Score: 0, State: 2User Id: 0, Client Package Name: com.cardscanner.p5_idle, Conflicting Client Devices: {2, 21, 23, 4, 52, 56, 58, })
+  10-17 09:09:50 : CONNECT device 0 client for package com.cardscanner.p5_idle (PID 16375, priority 0)
+  10-17 09:09:25 : DISCONNECT device 0 client for package com.cardscanner.p5_idle (PID 16375)
+  10-17 09:07:46 : CONNECT device 0 client for package com.cardscanner.p5_idle (PID 16375, priority 0)
+  10-17 09:07:45 : DISCONNECT device 0 client for package com.cardscanner.p5_idle (PID 0)
+  10-17 09:07:45 : DIED client com.cardscanner.p5_idle (PID 0), reason: (Binder died unexpectedly)
+  10-17 09:05:44 : CONNECT device 0 client for package com.cardscanner.p5_idle (PID 14176, priority 0)
+
+== after hold (09:21) ==
+Active Camera Clients:
+(Camera ID: 0, Cost: 51, PID: 16375, Score: 0, State: 2User Id: 0, Client Package Name: com.cardscanner.p5_idle, Conflicting Client Devices: {2, 21, 23, 4, 52, 56, 58, })
+  10-17 09:09:50 : CONNECT device 0 client for package com.cardscanner.p5_idle (PID 16375, priority 0)
+  10-17 09:09:25 : DISCONNECT device 0 client for package com.cardscanner.p5_idle (PID 16375)
+  10-17 09:07:46 : CONNECT device 0 client for package com.cardscanner.p5_idle (PID 16375, priority 0)
+  10-17 09:07:45 : DISCONNECT device 0 client for package com.cardscanner.p5_idle (PID 0)
+  10-17 09:07:45 : DIED client com.cardscanner.p5_idle (PID 0), reason: (Binder died unexpectedly)
+  10-17 09:05:44 : CONNECT device 0 client for package com.cardscanner.p5_idle (PID 14176, priority 0)

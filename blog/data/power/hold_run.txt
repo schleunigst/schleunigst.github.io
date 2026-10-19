@@ -1,0 +1,11 @@
+09:08:58 open_nosession
+09:09:24 closed
+09:09:49 idle_session
+09:10:14 stream
+09:10:39 stream_ml
+== hold start 09:11:04
+== hold done, resume x3 09:21:10
+post_hold_resume_1: 149.196 ms
+post_hold_resume_2: 281.08 ms
+post_hold_resume_3: 282.778 ms
+done 09:21:30

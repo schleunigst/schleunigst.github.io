@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+blog/__pycache__/
+blog/dist/
+blog/.pytest_cache/

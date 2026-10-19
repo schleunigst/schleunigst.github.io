@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 292" role="img" aria-labelledby="f3t f3d" width="720" height="292">
+<title id="f3t">First live frame after an RFID detour</title>
+<desc id="f3d">On the emulator P4 is fastest at 153 milliseconds; on the S24 FE P1 is fastest at 685 milliseconds and P4 is slowest at 1426 milliseconds.</desc>
+<rect x="96.0" y="24" width="12" height="12" fill="#bccdd5"/>
+<text x="114.0" y="34.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="11" fill="#677179" text-anchor="start" font-weight="400" >emulator (pixel_bench)</text>
+<rect x="274.0" y="24" width="12" height="12" fill="#28627b"/>
+<text x="292.0" y="34.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="11" fill="#677179" text-anchor="start" font-weight="400" >Galaxy S24 FE</text>
+<line x1="96.0" y1="232.0" x2="700" y2="232.0" stroke="#dce1e4" stroke-width="1" />
+<text x="86.0" y="236.0" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#677179" text-anchor="end" font-weight="400" >0</text>
+<line x1="96.0" y1="176.0" x2="700" y2="176.0" stroke="#dce1e4" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="86.0" y="180.0" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#677179" text-anchor="end" font-weight="400" >500</text>
+<line x1="96.0" y1="120.0" x2="700" y2="120.0" stroke="#dce1e4" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="86.0" y="124.0" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#677179" text-anchor="end" font-weight="400" >1000</text>
+<line x1="96.0" y1="64.0" x2="700" y2="64.0" stroke="#dce1e4" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="86.0" y="68.0" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#677179" text-anchor="end" font-weight="400" >1500</text>
+<text x="86.0" y="46.0" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#677179" text-anchor="end" font-weight="400" >ms</text>
+<rect x="147.5" y="190.8" width="22.0" height="41.2" fill="#bccdd5"/>
+<text x="158.5" y="184.8" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#222629" text-anchor="middle" font-weight="400" >368</text>
+<rect x="173.5" y="155.3" width="22.0" height="76.7" fill="#28627b"/>
+<text x="184.5" y="149.3" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#222629" text-anchor="middle" font-weight="400" >685</text>
+<text x="171.5" y="254.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="11" fill="#222629" text-anchor="middle" font-weight="400" >P1 prewarm</text>
+<rect x="298.5" y="212.0" width="22.0" height="20.0" fill="#bccdd5"/>
+<text x="309.5" y="206.0" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#222629" text-anchor="middle" font-weight="400" >179</text>
+<rect x="324.5" y="129.4" width="22.0" height="102.6" fill="#28627b"/>
+<text x="335.5" y="123.4" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#222629" text-anchor="middle" font-weight="400" >916</text>
+<text x="322.5" y="254.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="11" fill="#222629" text-anchor="middle" font-weight="400" >P2 camera2</text>
+<rect x="449.5" y="190.8" width="22.0" height="41.2" fill="#bccdd5"/>
+<text x="460.5" y="184.8" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#222629" text-anchor="middle" font-weight="400" >368</text>
+<rect x="475.5" y="138.6" width="22.0" height="93.4" fill="#28627b"/>
+<text x="486.5" y="132.6" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#222629" text-anchor="middle" font-weight="400" >834</text>
+<text x="473.5" y="254.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="11" fill="#222629" text-anchor="middle" font-weight="400" >P3 CameraX + ML Kit</text>
+<rect x="600.5" y="214.9" width="22.0" height="17.1" fill="#bccdd5"/>
+<text x="611.5" y="208.9" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#222629" text-anchor="middle" font-weight="400" >153</text>
+<rect x="626.5" y="72.3" width="22.0" height="159.7" fill="#28627b"/>
+<text x="637.5" y="66.3" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#222629" text-anchor="middle" font-weight="400" >1426</text>
+<text x="624.5" y="254.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="11" fill="#222629" text-anchor="middle" font-weight="400" >P4 camera2 + ML Kit</text>
+</svg>

@@ -1,0 +1,159 @@
+{
+ "stages": [
+  "arbiter_camera_clear",
+  "arbiter_rfid_requested",
+  "camera_open",
+  "camera_released",
+  "fast_ready",
+  "first_frame",
+  "native_stop_begin",
+  "native_stop_done",
+  "native_warmup_begin",
+  "native_warmup_done",
+  "preview_painted",
+  "rfid_page_mounted",
+  "rfid_start_result",
+  "scan_page_mounted",
+  "stop_for_nfc_acked",
+  "stop_for_nfc_requested",
+  "warmup_already_bound",
+  "warmup_requested"
+ ],
+ "trials": [
+  {
+   "tab_tap": 0,
+   "warmup_requested": 204,
+   "warmup_already_bound": 380,
+   "fast_ready": 595,
+   "scan_page_mounted": 17435,
+   "preview_painted": 18154
+  },
+  {
+   "tab_tap": 0,
+   "stop_for_nfc_requested": 457,
+   "native_stop_begin": 730,
+   "native_stop_done": 2117,
+   "stop_for_nfc_acked": 2702,
+   "rfid_page_mounted": 10571,
+   "arbiter_rfid_requested": 11401,
+   "camera_released": 172304,
+   "arbiter_camera_clear": 177386,
+   "rfid_start_result": 353763
+  },
+  {
+   "tab_tap": 0,
+   "warmup_requested": 527,
+   "native_warmup_begin": 812,
+   "native_warmup_done": 7051,
+   "fast_ready": 7733,
+   "scan_page_mounted": 17850,
+   "preview_painted": 18359,
+   "camera_open": 37651,
+   "first_frame": 680262
+  },
+  {
+   "tab_tap": 0,
+   "stop_for_nfc_requested": 384,
+   "native_stop_begin": 672,
+   "native_stop_done": 1992,
+   "stop_for_nfc_acked": 2660,
+   "rfid_page_mounted": 12033,
+   "arbiter_rfid_requested": 12611,
+   "camera_released": 195342,
+   "arbiter_camera_clear": 197859,
+   "rfid_start_result": 391140
+  },
+  {
+   "tab_tap": 0,
+   "warmup_requested": 2273,
+   "native_warmup_begin": 2628,
+   "scan_page_mounted": 2909,
+   "preview_painted": 3121,
+   "native_warmup_done": 10617,
+   "fast_ready": 11496,
+   "camera_open": 39506,
+   "first_frame": 737513
+  },
+  {
+   "tab_tap": 0,
+   "stop_for_nfc_requested": 255,
+   "native_stop_begin": 410,
+   "native_stop_done": 1374,
+   "stop_for_nfc_acked": 1726,
+   "rfid_page_mounted": 18075,
+   "arbiter_rfid_requested": 18911,
+   "camera_released": 195084,
+   "arbiter_camera_clear": 198855,
+   "rfid_start_result": 392650
+  },
+  {
+   "tab_tap": 0,
+   "warmup_requested": 260,
+   "native_warmup_begin": 397,
+   "native_warmup_done": 6389,
+   "fast_ready": 9584,
+   "scan_page_mounted": 9780,
+   "preview_painted": 9940,
+   "camera_open": 31600,
+   "first_frame": 685209
+  },
+  {
+   "tab_tap": 0,
+   "stop_for_nfc_requested": 243,
+   "native_stop_begin": 389,
+   "native_stop_done": 1340,
+   "stop_for_nfc_acked": 1853,
+   "rfid_page_mounted": 14754,
+   "arbiter_rfid_requested": 15163,
+   "camera_released": 159364,
+   "arbiter_camera_clear": 161820,
+   "rfid_start_result": 347531
+  },
+  {
+   "tab_tap": 0,
+   "warmup_requested": 491,
+   "native_warmup_begin": 2968,
+   "scan_page_mounted": 3484,
+   "preview_painted": 3768,
+   "native_warmup_done": 10233,
+   "fast_ready": 10791,
+   "camera_open": 49704,
+   "first_frame": 680104
+  },
+  {
+   "tab_tap": 0,
+   "stop_for_nfc_requested": 216,
+   "native_stop_begin": 392,
+   "native_stop_done": 880,
+   "stop_for_nfc_acked": 1189,
+   "rfid_page_mounted": 7284,
+   "arbiter_rfid_requested": 9196,
+   "camera_released": 155804,
+   "arbiter_camera_clear": 156467,
+   "rfid_start_result": 357207
+  },
+  {
+   "tab_tap": 0,
+   "warmup_requested": 262,
+   "native_warmup_begin": 471,
+   "scan_page_mounted": 741,
+   "preview_painted": 944,
+   "native_warmup_done": 6611,
+   "fast_ready": 7222,
+   "camera_open": 31301,
+   "first_frame": 705619
+  },
+  {
+   "tab_tap": 0,
+   "stop_for_nfc_requested": 221,
+   "native_stop_begin": 391,
+   "native_stop_done": 1109,
+   "stop_for_nfc_acked": 3386,
+   "rfid_page_mounted": 3807,
+   "arbiter_rfid_requested": 3993,
+   "camera_released": 211170,
+   "arbiter_camera_clear": 214728,
+   "rfid_start_result": 396355
+  }
+ ]
+}

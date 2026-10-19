@@ -1,0 +1,20 @@
+[
+ {
+  "trial": 0,
+  "kind": "cold",
+  "tap_guest_ms": 1792153056660,
+  "visible_ms_host": 15.798877954483032
+ },
+ {
+  "trial": 1,
+  "kind": "warm",
+  "tap_guest_ms": 1792153076306,
+  "visible_ms_host": 9.327428340911865
+ },
+ {
+  "trial": 2,
+  "kind": "warm",
+  "tap_guest_ms": 1792153089523,
+  "visible_ms_host": 9.367957830429077
+ }
+]
