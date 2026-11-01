@@ -6,7 +6,7 @@ org: Schleunigst
 status: Working notes
 date: 2026-10-31
 slug: the-board-is-the-handoff
-draft: true
+draft: false
 sections:
   - The session is not the plan | Chat history, TODO files, and hosted trackers each lose something an agent needs
   - One board, many repositories | Global task IDs and dependencies that cross project boundaries
@@ -18,7 +18,7 @@ sections:
 
 An agent session ends and takes the plan with it. The files remain, the tests still pass or fail, but the reason for the next change — what was tried, what is blocked, who owns it — lives in a transcript the next session will not read.
 
-[Taskwharf](https://github.com/schleunigst/taskwharf) is a small attempt to make that reason durable. It is a local-first task board for coding agents: one SQLite database outside every repository, a CLI that returns JSON, a local web board, and an HTTP API over the same store. We built it while working on a Flutter camera package whose iOS half was waiting on hardware; the board held the package and the tooling, and its dependency edges made the blockers visible without a meeting.
+Taskwharf is a small attempt to make that reason durable. It is a local-first task board for coding agents: one SQLite database outside every repository, a CLI that returns JSON, a local web board, and an HTTP API over the same store. We built it while working on a Flutter camera package whose iOS half was waiting on hardware; the board held the package and the tooling, and its dependency edges made the blockers visible without a meeting.
 
 ## The session is not the plan
 
@@ -92,3 +92,5 @@ Taskwharf is not a hosted multi-tenant project manager, and it is not trying to 
 The current limits are real. It is alpha software and not on PyPI yet. There is no authentication, no multi-machine sync, no issue-tracker sync, and no OpenCode plugin. Claim leases with expiry are on the roadmap; today claims are advisory and the stale report is the safety net. Exposing the server to an untrusted network is not supported.
 
 Those are acceptable constraints for a tool whose job is to be smaller than the work. Taskwharf does not make an agent smarter. It makes the handoff cheaper. The board is not the work; it is the part of the work that survives the session.
+
+Taskwharf is still private while the first release is prepared. The repository and install instructions will be linked here when it opens.
