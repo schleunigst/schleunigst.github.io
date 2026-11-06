@@ -1,6 +1,6 @@
 ---
 title: The Vault Is Not a Notebook
-dek: An idea repository built around an append-only log, a typed graph, and a proposal queue — what six months of prior art and two weeks of measurement changed about the design.
+dek: An idea repository built around an append-only log, a typed graph, and a proposal queue — what seven research tracks and three measurement spikes changed about the design.
 author: Schleunigst
 org: Schleunigst
 status: Design notes, phase 1
@@ -22,7 +22,7 @@ A note is a container for something you already know how to say. An idea is not 
 
 Idea Vault is an attempt to store the other thing. It is a repository where ideas are appended rather than filed, connected by a machine that has to explain itself, and retrieved by meaning as often as by words. It is not a note-taking app, and the first thing the research did was talk me out of several features it seemed obvious to build.
 
-Nothing in this entry is shipped software. Phase 1 was a manifesto, seven research tracks, and two measurement spikes against synthetic vaults. The numbers below are real; the product is not, yet. What follows is the design that survived contact with the evidence.
+Nothing in this entry is shipped software. Phase 1 was a manifesto, seven research tracks, and three measurement spikes against synthetic vaults. The numbers below are real; the product is not, yet. What follows is the design that survived contact with the evidence.
 
 ## The note is the wrong unit
 
@@ -149,7 +149,7 @@ It will not ship a global graph canvas as the product. It will not let a model w
 
 And it will not generate ideas until the review loop works. That is the ordering that matters: capture, recall, triage — then, if the rating log says the proposals are worth reading, generation.
 
-Phase 1 closed with a manifesto, seven research tracks, two spikes and a roadmap with gates. The first gate is unglamorous: capture an idea on a Raspberry Pi, kill the power, reboot, and prove the vault comes back byte-identical. If that does not hold, none of the rest is worth building.
+Phase 1 closed with a manifesto, seven research tracks, three spikes and a roadmap with gates. The first gate is unglamorous: capture an idea on a Raspberry Pi, kill the power, reboot, and prove the vault comes back byte-identical. If that does not hold, none of the rest is worth building.
 
 The vault is not where ideas go to be stored. It is where they go to be argued with.
 
