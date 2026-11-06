@@ -54,7 +54,7 @@ The core loop is the same in every mode: **listen → notice → retrieve → pr
 - **Drive (30–45 min, audio only).** One core episode, screen locked, no taps. Embedded “think the answer” prompts with pauses, no speaking exercises. After parking, an optional thirty-second recall. The point is not to turn a commute into a classroom; it is to make input cheap enough to happen at all.
 - **Desk (20–30 min, written first).** Up to eight due review items, one episode with the transcript hidden, comprehension questions, then one or two written production prompts. Writing is the default production mode, not a consolation prize. The session is saved with the actual listening time and the exercise ids that were attempted.
 - **Micro (5–10 min, low energy).** One 20–90 second segment, up to three recall items, and one written sentence. Playback stops at the segment boundary. A micro session is recorded as a micro session, and it does **not** mark the whole lesson complete. A tired evening is a smaller session, not a broken streak.
-- **Checkpoint (15–25 min, monthly).** An uncompleted or least-recently studied episode, a listening slice, comprehension, a level-appropriate writing sample, and four self-ratings: task completion, grammar, vocabulary, coherence. It is stored as an assessment session and it does not complete the lesson. It is explicitly a practice checkpoint, not a CEFR test.
+- **Checkpoint (15–25 min, monthly).** An uncompleted or least-recently studied episode, a listening slice, comprehension, a level-appropriate writing sample, and four self-ratings: task completion, grammar, vocabulary, coherence. It is stored as an assessment session and it does not complete the lesson. It is explicitly a practice checkpoint, not a CEFR test.[^checkpoint]
 
 The mode switcher above is the argument in miniature. Drive protects the habit. Desk protects the depth. Micro protects the low-energy day. The checkpoint protects against the most comfortable lie in self-study: that time spent is the same thing as learning.
 
@@ -92,9 +92,9 @@ The pipeline is deliberately boring in the places that matter:
 - **Retries are bounded.** Transient 429/5xx responses are retried with exponential backoff and `Retry-After`; authentication and disabled-API errors fail immediately instead of burning quota.
 - **The pack is immutable.** A version never changes after publish. A fix is a new version. The pipeline writes a manifest and per-file SHA-256 hashes; the current bundled-asset loader checks catalog/manifest identity, and publish-time hash verification is still a contract to wire, not a finished claim.
 
-The first packs use Microsoft Edge's consumer `es-MX-DaliaNeural` endpoint. It is free and it made real Spanish audio possible immediately, but it is **evaluation/personal use**, not a licensed production backend. Gemini Flash/Flash-Lite is the intended production voice; the provider is written and tested against mocked responses, but the current key's project has the API disabled, so the app still ships Edge audio. That is the honest state of the content path.
+The first packs use Microsoft Edge's consumer `es-MX-DaliaNeural` endpoint. It is free and it made real Spanish audio possible immediately, but it is **evaluation/personal use**, not a licensed production backend. Gemini Flash/Flash-Lite is the intended production voice; the provider is written and tested against mocked responses, but the current key's project has the API disabled,[^gemini] so the app still ships Edge audio. That is the honest state of the content path.
 
-The content itself is still small. Nine lessons, three packs, 57.6 minutes of audio. That is enough to exercise the loop and the app; it is nowhere near the 20–40 hours a daily learner needs for months. The next constraint is not more app surface. It is more reviewed content.
+The content itself is still small. Nine lessons, three packs, 57.6 minutes of audio.[^content] That is enough to exercise the loop and the app; it is nowhere near the 20–40 hours a daily learner needs for months. The next constraint is not more app surface. It is more reviewed content.
 
 ## What it refuses to do
 
