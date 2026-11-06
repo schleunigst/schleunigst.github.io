@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 274" role="img" aria-labelledby="vst vsd" width="720" height="274">
+<title id="vst">Three representations of one idea vault: an append-only event log folded into disposable projections, read by three kinds of client</title>
+<desc id="vsd">The append-only log holds every idea, edge, proposal and review, and is the only authority. A deterministic fold produces three projections: a typed graph, a full-text index, and embedding vectors. The Flutter app, the command line, and an MCP server for agents read those projections and append to the same log. Derived data can be deleted and rebuilt from the log at any time.</desc>
+<defs>
+<marker id="va" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+<path d="M 0 0 L 10 5 L 0 10 z" fill="#28627b"/>
+</marker>
+<marker id="vm" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+<path d="M 0 0 L 10 5 L 0 10 z" fill="#677179"/>
+</marker>
+</defs>
+
+<rect x="16" y="40" width="200" height="182" rx="10" fill="#f4f7f8" stroke="#28627b" stroke-width="1.4"/>
+<text x="116" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="600" fill="#222629" text-anchor="middle">event log</text>
+<text x="116" y="84" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9.5" fill="#677179" text-anchor="middle">the only authority</text>
+<text x="34" y="112" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#28627b">idea.created</text>
+<text x="34" y="130" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#28627b">edge.asserted</text>
+<text x="34" y="148" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#28627b">proposal.created</text>
+<text x="34" y="166" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#28627b">proposal.rejected</text>
+<text x="34" y="184" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#28627b">idea.superseded</text>
+<text x="34" y="206" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9.5" fill="#9aa3a9">device 4f2 · seq 81 044</text>
+
+<line x1="220" y1="64" x2="258" y2="64" stroke="#28627b" stroke-width="1.4" marker-end="url(#va)"/>
+<line x1="220" y1="124" x2="258" y2="124" stroke="#28627b" stroke-width="1.4" marker-end="url(#va)"/>
+<line x1="220" y1="184" x2="258" y2="184" stroke="#28627b" stroke-width="1.4" marker-end="url(#va)"/>
+<text x="239" y="56" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9" fill="#28627b" text-anchor="middle">fold</text>
+
+<rect x="264" y="40" width="176" height="48" rx="8" fill="#fff" stroke="#dce1e4"/>
+<text x="352" y="61" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#222629" text-anchor="middle">graph</text>
+<text x="352" y="77" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9" fill="#677179" text-anchor="middle">typed edges · provenance</text>
+
+<rect x="264" y="100" width="176" height="48" rx="8" fill="#fff" stroke="#dce1e4"/>
+<text x="352" y="121" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#222629" text-anchor="middle">full-text index</text>
+<text x="352" y="137" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9" fill="#677179" text-anchor="middle">p95 0.07–12.7 ms</text>
+
+<rect x="264" y="160" width="176" height="48" rx="8" fill="#fff" stroke="#dce1e4"/>
+<text x="352" y="181" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="#222629" text-anchor="middle">vectors</text>
+<text x="352" y="197" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9" fill="#677179" text-anchor="middle">kNN 7 ms @ 10 k</text>
+
+<text x="352" y="228" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9" fill="#9aa3a9" text-anchor="middle">delete and rebuild at any time</text>
+
+<line x1="440" y1="64" x2="478" y2="64" stroke="#28627b" stroke-width="1.4" marker-end="url(#va)"/>
+<line x1="440" y1="124" x2="478" y2="124" stroke="#28627b" stroke-width="1.4" marker-end="url(#va)"/>
+<line x1="440" y1="184" x2="478" y2="184" stroke="#28627b" stroke-width="1.4" marker-end="url(#va)"/>
+
+<rect x="484" y="40" width="220" height="182" rx="10" fill="#fff" stroke="#dce1e4"/>
+<text x="594" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="600" fill="#222629" text-anchor="middle">clients</text>
+<text x="594" y="96" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#222629" text-anchor="middle">Flutter</text>
+<text x="594" y="111" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9" fill="#677179" text-anchor="middle">embedded core</text>
+<text x="594" y="140" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#222629" text-anchor="middle">CLI</text>
+<text x="594" y="155" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9" fill="#677179" text-anchor="middle">json in, json out</text>
+<text x="594" y="184" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#222629" text-anchor="middle">MCP server</text>
+<text x="594" y="199" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9" fill="#677179" text-anchor="middle">11 tools · agents</text>
+
+<path d="M 594 226 L 594 256 L 116 256 L 116 228" fill="none" stroke="#677179" stroke-width="1.2" stroke-dasharray="4 3" marker-end="url(#vm)"/>
+<text x="352" y="250" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9" fill="#677179" text-anchor="middle">every client appends to the same log</text>
+</svg>

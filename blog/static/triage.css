@@ -1,0 +1,180 @@
+/* triage.css -- styles for the vault-triage figure (data-ix="triage").
+   Loaded after style.css and interactive.css; uses the same tokens. */
+
+.ix-triage { margin: 6px 0 2px; }
+
+.ix-tgraph {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 0 8px;
+}
+
+.ix-tcluster {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 10px;
+  letter-spacing: 0.04em;
+}
+
+.ix-tnode rect {
+  fill: #fff;
+  stroke-width: 1.3;
+}
+.ix-tnode.is-capture rect { stroke: #28627b; }
+.ix-tnode.is-sync rect { stroke: #ac6538; }
+
+.ix-tnode text {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  fill: #222629;
+}
+
+.ix-tarr { fill: #677179; }
+
+.ix-tedge line {
+  stroke: #9aa3a9;
+  stroke-width: 1.4;
+  stroke-dasharray: 5 4;
+  transition: stroke 0.2s ease, stroke-width 0.2s ease, stroke-dasharray 0.2s ease;
+}
+.ix-tedge text {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 9.5px;
+  fill: #28627b;
+  opacity: 0;
+  paint-order: stroke;
+  stroke: #fff;
+  stroke-width: 3px;
+  transition: opacity 0.2s ease;
+}
+.ix-tedge.is-on line {
+  stroke: #28627b;
+  stroke-width: 1.8;
+  stroke-dasharray: none;
+}
+.ix-tedge.is-on text { opacity: 1; }
+
+.ix-tstat {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 11.5px;
+  color: #677179;
+  margin: 0 0 10px;
+}
+
+.ix-tcards { display: grid; gap: 10px; margin: 0 0 10px; }
+
+.ix-tcard {
+  border: 1px solid #dce1e4;
+  border-radius: 8px;
+  padding: 11px 13px 12px;
+  background: #fff;
+  transition: border-color 0.2s ease, background 0.2s ease, opacity 0.2s ease;
+}
+.ix-tcard.is-accepted {
+  border-color: #28627b;
+  background: #f4f7f8;
+}
+.ix-tcard.is-dismissed {
+  border-style: dashed;
+  border-color: #dce1e4;
+  background: #fff;
+}
+.ix-tcard.is-dismissed .ix-twhy { color: #9aa3a9; }
+.ix-tcard.is-dismissed .ix-thead { opacity: 0.6; }
+
+.ix-thead {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 4px 10px;
+  margin: 0 0 6px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 11px;
+}
+.ix-troute { color: #28627b; font-weight: 600; }
+.ix-ttype {
+  color: #222629;
+  border: 1px solid #dce1e4;
+  border-radius: 99px;
+  padding: 1px 7px;
+  font-size: 10.5px;
+}
+.ix-tconf { color: #677179; }
+.ix-tprov {
+  color: #9aa3a9;
+  margin-left: auto;
+  font-size: 10.5px;
+}
+
+.ix-twhy {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: #222629;
+  margin: 0 0 10px;
+}
+
+.ix-tbtns {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 11px;
+  color: #677179;
+}
+
+.ix-tbtn {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #222629;
+  background: #fff;
+  border: 1px solid #dce1e4;
+  border-radius: 6px;
+  padding: 5px 12px;
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+}
+.ix-taccept:hover { color: #28627b; border-color: #28627b; }
+.ix-treject:hover { color: #ac6538; border-color: #ac6538; }
+.ix-tbtn:focus-visible { outline: 3px solid #3585ab; outline-offset: 2px; }
+
+.ix-tlog {
+  border-left: 2px solid #dce1e4;
+  padding: 2px 0 2px 10px;
+  margin: 0 0 10px;
+  min-height: 18px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 10.5px;
+  line-height: 1.7;
+  color: #677179;
+}
+.ix-tlog:empty { display: none; }
+.ix-tlogline.is-add { color: #28627b; }
+.ix-tlogline.is-drop { color: #ac6538; }
+
+.ix-tactions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.ix-treset { margin: 0; }
+.ix-thint {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  font-size: 12px;
+  color: #9aa3a9;
+}
+
+@media (max-width: 560px) {
+  .ix-tprov { margin-left: 0; }
+  .ix-tnode text { font-size: 10px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ix-tedge line,
+  .ix-tedge text,
+  .ix-tcard,
+  .ix-tbtn { transition: none; }
+}

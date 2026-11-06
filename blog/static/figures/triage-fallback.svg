@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 234" role="img" aria-labelledby="tgt tgd" width="720" height="234">
+<title id="tgt">Six ideas in two clusters with three machine-proposed links, dashed and awaiting review</title>
+<desc id="tgd">The capture cluster holds one gesture, share sheet and widget link; the sync cluster holds one writer, HLC order and event union. Three dashed edges are proposals: share sheet refines one gesture at 0.82 confidence from an agent, widget link supports one gesture at 0.71 from an embedding extractor, and one writer refines event union at 0.88 from an agent. None is part of the graph until a person accepts it.</desc>
+<defs>
+<marker id="ta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+<path d="M 0 0 L 10 5 L 0 10 z" fill="#677179"/>
+</marker>
+</defs>
+
+<text x="150" y="26" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#28627b" text-anchor="middle">capture</text>
+<text x="570" y="26" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#ac6538" text-anchor="middle">sync</text>
+
+<line x1="150" y1="86" x2="86" y2="140" stroke="#677179" stroke-width="1.4" stroke-dasharray="5 4" marker-end="url(#ta)"/>
+<line x1="214" y1="140" x2="162" y2="90" stroke="#677179" stroke-width="1.4" stroke-dasharray="5 4" marker-end="url(#ta)"/>
+<line x1="570" y1="86" x2="634" y2="140" stroke="#677179" stroke-width="1.4" stroke-dasharray="5 4" marker-end="url(#ta)"/>
+
+<text x="112" y="110" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9.5" fill="#677179" text-anchor="middle" paint-order="stroke" stroke="#fff" stroke-width="3">refines 0.82</text>
+<text x="196" y="104" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9.5" fill="#677179" text-anchor="middle" paint-order="stroke" stroke="#fff" stroke-width="3">supports 0.71</text>
+<text x="608" y="110" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="9.5" fill="#677179" text-anchor="middle" paint-order="stroke" stroke="#fff" stroke-width="3">refines 0.88</text>
+
+<rect x="98" y="52" width="104" height="32" rx="8" fill="#fff" stroke="#28627b" stroke-width="1.3"/>
+<text x="150" y="72" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#222629" text-anchor="middle">one gesture</text>
+<rect x="22" y="140" width="104" height="32" rx="8" fill="#fff" stroke="#28627b" stroke-width="1.3"/>
+<text x="74" y="160" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#222629" text-anchor="middle">share sheet</text>
+<rect x="174" y="140" width="104" height="32" rx="8" fill="#fff" stroke="#28627b" stroke-width="1.3"/>
+<text x="226" y="160" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#222629" text-anchor="middle">widget link</text>
+
+<rect x="518" y="52" width="104" height="32" rx="8" fill="#fff" stroke="#ac6538" stroke-width="1.3"/>
+<text x="570" y="72" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#222629" text-anchor="middle">one writer</text>
+<rect x="442" y="140" width="104" height="32" rx="8" fill="#fff" stroke="#ac6538" stroke-width="1.3"/>
+<text x="494" y="160" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#222629" text-anchor="middle">HLC order</text>
+<rect x="594" y="140" width="104" height="32" rx="8" fill="#fff" stroke="#ac6538" stroke-width="1.3"/>
+<text x="646" y="160" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#222629" text-anchor="middle">event union</text>
+
+<line x1="40" y1="200" x2="84" y2="200" stroke="#677179" stroke-width="1.4" stroke-dasharray="5 4"/>
+<text x="94" y="204" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#677179">proposed by a model — not in the graph until a person accepts</text>
+<text x="40" y="222" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#9aa3a9">rejecting keeps the proposal in the log; nothing is deleted</text>
+</svg>
