@@ -145,7 +145,7 @@ sentence. Captions are sans-serif, muted, and left-aligned.
 ## Interactive figures
 
 `static/interactive.js` upgrades a figure when it carries
-`data-ix="startup|ranking|arbiter"`. The figure always ships a static SVG
+`data-ix="startup|ranking|arbiter|loop"`. The figure always ships a static SVG
 fallback first; the script removes it only after it successfully builds the
 live version, so the page stays readable without JavaScript (and with
 `prefers-reduced-motion`, playback is skipped and the end state shown).
@@ -162,6 +162,8 @@ live version, so the page stays readable without JavaScript (and with
 - `ranking` — environment toggle with animated bars swapping rank order.
 - `arbiter` — two-lane race from tab tap to RFID start, with the camera
   dead-time band revealed as the playhead passes.
+- `loop` — mode switcher for the language-learning entry; each mode renders
+  its session steps and a one-line rationale.
 
 Datasets for each kind live at the top of `interactive.js` (keyed by kind,
 not by figure), which is fine for one entry but should be split per-entry

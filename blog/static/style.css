@@ -331,6 +331,34 @@ button:focus-visible {
 .callout-warning .callout-label { color: var(--warm); }
 .entry blockquote.callout-warning { background: #faf6f1; }
 
+/* --- disclosure blocks ---------------------------------------------------- */
+
+.entry details {
+  margin: 24px 0;
+  padding: 14px 18px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--paper);
+}
+.entry details summary {
+  cursor: pointer;
+  font: 600 13.5px/1.4 var(--sans);
+  color: var(--accent-deep);
+  list-style-position: outside;
+}
+.entry details summary:focus-visible {
+  outline: 3px solid #3585ab;
+  outline-offset: 3px;
+}
+.entry details > *:not(summary) {
+  margin-top: 12px;
+}
+.entry details p {
+  font-size: 15px;
+  line-height: 1.65;
+  color: #435a68;
+}
+
 /* --- tables -------------------------------------------------------------- */
 
 .table-wrap { overflow-x: auto; margin: 30px 0; }

@@ -210,6 +210,52 @@
 .ix-value { font: 600 13px/1 var(--mono); color: var(--ink); text-align: right; }
 .ix-badge { font: 600 11px/1 var(--mono); color: var(--faint); text-align: right; }
 
+/* --- language-learning loop ------------------------------------------------ */
+.ix-loop-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+  margin: 4px 0 14px;
+}
+.ix-loop-step {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-height: 108px;
+  padding: 13px 13px 12px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--accent);
+  border-radius: 4px;
+}
+.ix-loop-num {
+  font: 600 10.5px/1 var(--mono);
+  letter-spacing: .12em;
+  color: var(--faint);
+}
+.ix-loop-label {
+  font: 600 13.5px/1.25 var(--sans);
+  color: var(--ink);
+}
+.ix-loop-copy {
+  font: 12.5px/1.45 var(--sans);
+  color: var(--muted);
+}
+.ix-loop-summary {
+  margin: 0;
+  padding: 10px 0 0 13px;
+  border-left: 2px solid var(--line);
+  font: 15px/1.55 var(--serif);
+  color: var(--ink);
+}
+@media (max-width: 560px) {
+  .ix-loop-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .ix-loop-step { min-height: 0; }
+}
+@media (max-width: 380px) {
+  .ix-loop-steps { grid-template-columns: 1fr; }
+}
+
 /* --- arbiter race ---------------------------------------------------------- */
 .ix-race { position: relative; margin: 8px 0 12px; }
 .ix-player {

@@ -1,5 +1,5 @@
 /* interactive.js -- interactive figures for entry pages.
-   Figures opt in with data-ix="startup|ranking|arbiter" and a static
+   Figures opt in with data-ix="startup|ranking|arbiter|loop" and a static
    <img class="ix-fallback">; this script replaces the fallback with a
    live version. Data lives here, keyed by figure kind (one entry today;
    split per-entry if the site grows). See README "Interactive figures". */
@@ -587,6 +587,96 @@
     }
   }
 
+  /* --- language-learning loop: switch modes, see the session shape --------- */
+  var LOOP = {
+    order: ["drive", "desk", "micro", "checkpoint"],
+    modes: {
+      drive: {
+        label: "Drive \u00b7 30\u201345 min",
+        steps: [
+          { n: "01", label: "Listen", copy: "One core episode, screen locked. No taps, no exercises." },
+          { n: "02", label: "Notice", copy: "Embedded think-the-answer prompts with pauses." },
+          { n: "03", label: "Return", copy: "Optional three-question recall after parking." },
+          { n: "04", label: "Record", copy: "The drive session stores listening time and completed lessons." }
+        ],
+        summary: "Input stays cheap enough to happen on a commute. Speaking and reading stay off while driving."
+      },
+      desk: {
+        label: "Desk \u00b7 20\u201330 min",
+        steps: [
+          { n: "01", label: "Warm-up", copy: "Up to eight due review items, earliest first." },
+          { n: "02", label: "Listen", copy: "One episode with the transcript hidden by default." },
+          { n: "03", label: "Check", copy: "Comprehension questions must be answered before continuing." },
+          { n: "04", label: "Produce", copy: "Written prompts check the target phrases; the text is stored." },
+          { n: "05", label: "Review", copy: "FSRS-6 updates the next due date and skill evidence." }
+        ],
+        summary: "The default session: retrieval, input, checking, and production in one finite loop."
+      },
+      micro: {
+        label: "Micro \u00b7 5\u201310 min",
+        steps: [
+          { n: "01", label: "Recall", copy: "Three items from earlier lessons, or unseen items." },
+          { n: "02", label: "Listen", copy: "One 20\u201390 second segment, then playback stops." },
+          { n: "03", label: "Write", copy: "One sentence using the target language." },
+          { n: "04", label: "Stop", copy: "Recorded as a micro session; it does not complete the lesson." }
+        ],
+        summary: "A tired evening still counts. The session is smaller, not a broken streak."
+      },
+      checkpoint: {
+        label: "Checkpoint \u00b7 15\u201325 min",
+        steps: [
+          { n: "01", label: "Listen", copy: "An uncompleted episode, or the least recently studied one." },
+          { n: "02", label: "Check", copy: "Comprehension on the unseen slice." },
+          { n: "03", label: "Write", copy: "A level-appropriate sample with a word target." },
+          { n: "04", label: "Rate", copy: "Task, grammar, vocabulary, coherence, 0\u20134." },
+          { n: "05", label: "Compare", copy: "Stored as an assessment session; the trend is the signal." }
+        ],
+        summary: "A practice checkpoint, not a CEFR test. It measures the learner's own output over months."
+      }
+    }
+  };
+
+  function initLoop(fig) {
+    var root = el("div", "ix-root");
+    var grid = el("div", "ix-loop-steps");
+    var summary = el("p", "ix-loop-summary");
+    summary.setAttribute("aria-live", "polite");
+    var controls = buildControls(
+      LOOP.order.map(function (key) {
+        return { key: key, label: LOOP.modes[key].label, active: key === "desk" };
+      }),
+      function (key) {
+        render(key);
+      }
+    );
+
+    function render(key) {
+      controls.setActive(key);
+      grid.textContent = "";
+      var mode = LOOP.modes[key];
+      mode.steps.forEach(function (step) {
+        var card = el("div", "ix-loop-step");
+        var num = el("span", "ix-loop-num");
+        num.textContent = step.n;
+        var label = el("span", "ix-loop-label");
+        label.textContent = step.label;
+        var copy = el("span", "ix-loop-copy");
+        copy.textContent = step.copy;
+        card.appendChild(num);
+        card.appendChild(label);
+        card.appendChild(copy);
+        grid.appendChild(card);
+      });
+      summary.textContent = mode.summary;
+    }
+
+    root.appendChild(controls.el);
+    root.appendChild(grid);
+    root.appendChild(summary);
+    fig.insertBefore(root, fig.querySelector("figcaption"));
+    render("desk");
+  }
+
   /* --- bootstrap ----------------------------------------------------------- */
   Array.prototype.slice
     .call(document.querySelectorAll("figure[data-ix]"))
@@ -597,6 +687,7 @@
       if (kind === "startup") initStartup(fig);
       else if (kind === "ranking") initRanking(fig);
       else if (kind === "arbiter") initArbiter(fig);
+      else if (kind === "loop") initLoop(fig);
       else return;
       img.parentNode.removeChild(img);
     });

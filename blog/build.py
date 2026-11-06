@@ -39,12 +39,11 @@ from pathlib import Path
 # --------------------------------------------------------------------------
 
 SITE_TITLE = "Schleunigst"
-SITE_TAGLINE = "Notes on making Android cameras instant"
+SITE_TAGLINE = "Notes on cameras, language, and local-first tools"
 SITE_DEK = (
-    "Field notes on making Android cameras instant: teardowns of the "
-    "scan stacks people actually run, every camera state priced in "
-    "milliseconds and milliamps, and the design the measurements imply. "
-    "Newest entries first."
+    "Field notes on software that earns its place: camera lifetimes priced "
+    "in milliseconds and milliamps, a finite Spanish-learning loop, and "
+    "small local-first tools. Newest entries first."
 )
 WORDS_PER_MINUTE = 200
 
@@ -807,6 +806,7 @@ def render_shell(*, title: str, description: str, asset_prefix: str, content_htm
 <link rel="stylesheet" href="{FONTS_HREF}">
 <link rel="stylesheet" href="{asset_prefix}/style.css">
 <link rel="stylesheet" href="{asset_prefix}/interactive.css">
+<link rel="stylesheet" href="{asset_prefix}/triage.css">
 </head>
 <body id="top">
 <a class="skip-link" href="#content">Skip to content</a>
@@ -815,6 +815,7 @@ def render_shell(*, title: str, description: str, asset_prefix: str, content_htm
 <script src="{asset_prefix}/footnotes.js" defer></script>
 <script src="{asset_prefix}/entry.js" defer></script>
 <script src="{asset_prefix}/interactive.js" defer></script>
+<script src="{asset_prefix}/triage.js" defer></script>
 <script src="{asset_prefix}/data.js" defer></script>
 </body>
 </html>
