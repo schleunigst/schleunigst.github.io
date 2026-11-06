@@ -29,7 +29,9 @@ blog/
     footnotes.js           popover footnotes
     entry.js               progress bar, roadmap active state, keeps, anchors
     interactive.css        styles for interactive figures (data-ix)
-    interactive.js         interactive figure engine (startup / ranking / arbiter)
+    interactive.js         interactive figure engine (startup / ranking / arbiter / loop)
+    triage.css             styles for the vault-triage figure
+    triage.js              self-contained vault-triage figure (data-ix="triage")
     data.js                per-cycle explorer for the bundled dataset page
     figures/               entry figures (SVG; also the no-JS fallbacks)
   data/                    published benchmark datasets (see below)
@@ -145,7 +147,8 @@ sentence. Captions are sans-serif, muted, and left-aligned.
 ## Interactive figures
 
 `static/interactive.js` upgrades a figure when it carries
-`data-ix="startup|ranking|arbiter|loop"`. The figure always ships a static SVG
+`data-ix="startup|ranking|arbiter|loop"`, and `static/triage.js` does the same
+for `data-ix="triage"`. The figure always ships a static SVG
 fallback first; the script removes it only after it successfully builds the
 live version, so the page stays readable without JavaScript (and with
 `prefers-reduced-motion`, playback is skipped and the end state shown).
@@ -164,11 +167,20 @@ live version, so the page stays readable without JavaScript (and with
   dead-time band revealed as the playhead passes.
 - `loop` — mode switcher for the language-learning entry; each mode renders
   its session steps and a one-line rationale.
+- `triage` — accept/reject machine-proposed edges against a six-idea vault:
+  the graph, the tally and the event strip update as proposals are promoted or
+  dismissed, and nothing is deleted either way.
 
 Datasets for each kind live at the top of `interactive.js` (keyed by kind,
-not by figure), which is fine for one entry but should be split per-entry
-when a second entry needs different numbers. Styles are in
-`static/interactive.css`; all playback respects reduced motion.
+not by figure). That is fine while the figures share a dataset; `triage` shares
+nothing with the camera figures, so it lives in its own pair of files
+(`triage.js`, `triage.css`, both included site-wide by `build.py`) with its own
+bootstrap and its own styles. To add a figure this way: ship a static SVG
+fallback, then a self-contained script that finds `figure[data-ix="<kind>"]`,
+builds the live DOM before the `<figcaption>`, and removes the
+`img.ix-fallback` only after it succeeds. Styles are in
+`static/interactive.css` for the shared engine and `static/triage.css` for the
+standalone one; all playback respects reduced motion.
 
 A fourth style, `.decomp`, is pure CSS (no JS): rows of segmented bars for
 "where the time went" breakdowns, where text lays itself out and cannot clip
